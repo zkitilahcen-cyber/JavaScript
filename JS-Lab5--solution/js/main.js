@@ -4,16 +4,27 @@ var fruits = ['Mangue','Raisin','Kiwi','Figue'];
 
 function isExist() {
     var fruitAchter = document.getElementById("fruit").value;
-    var index = fruits.indexOf(fruitAchter);
-    if (fruitAchter=='Mangue'||fruitAchter=='Raisin'||fruitAchter=='Figue'||fruitAchter=='Kiwi' && index > -1){
-        fruits.splice(index, 1);
-        alert("Ok!");
-        document.getElementById("filter").innerHTML=fruits;
-    }
-    else {
-        alert("indisponible");
+    var achat = false;
+    for (index = 0 ; index < fruits.length; index++ ){
+    
+        if (fruitAchter.toUpperCase() == fruits[index].toUpperCase()){
+            console.log("fruits "+fruits[index]);
+            console.log("fruitAchter "+fruitAchter);
+            
+            fruits.splice(index, 1);
+            
+            achat=true;
+        }
     }
 
+    if (achat==true){
+        alert("Ok!");
+
+    }else {
+        alert("Indisponible");
+    }
+
+    document.getElementById("demo").innerHTML=fruits;
     
 
 }
