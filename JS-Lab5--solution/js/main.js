@@ -8,8 +8,6 @@ function isExist() {
     for (index = 0 ; index < fruits.length; index++ ){
     
         if (fruitAchter.toUpperCase() == fruits[index].toUpperCase()){
-            console.log("fruits "+fruits[index]);
-            console.log("fruitAchter "+fruitAchter);
             
             fruits.splice(index, 1);
             
