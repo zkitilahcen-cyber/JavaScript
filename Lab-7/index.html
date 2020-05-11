@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lab7</title>
+</head>
+<body>
+    <header >
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="list-group p-4">
+                        <a class="list-group-item list-group-item-action" href="#participant" id="liste">Liste des étudiants</a>
+                        <a class="list-group-item list-group-item-action" href="#profils" id="profils">Mon profils</a>
+                        <a class="list-group-item list-group-item-action active" href="#" id="quiter">Quiter</a>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark row">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="buttons col-sm-8"> 
+                    <button class="btn btn-secondary" id="discussion" onclick="window.location.href = '#discussion'">Discussion</button>  
+                    <button class="btn btn-secondary" id="devoirs" onclick="window.location.href = '#devoirs'">Travaux et devoirs</button>   
+                    <button class="btn btn-secondary" id="participant" onclick="window.location.href = '#participant'">Participant</button>
+                </div> 
+            </nav>
+        </div>
+    </header>
+
+    <section id="app-root">
+      <!-- Contenu injecté ici -->
+    </section>
+
+    <!--JQuery-Popper-Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <!---->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <!--firbase sdk link goes here-->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+
+
+    <!-- Scripts à la fin pour laisser le DOM se charger -->
+    <script src="scripts/component-loader.js"></script>
+    <script src="scripts/application-router.js"></script>
+    <script src="view-models/participant-view-model.js"></script>
+    <script src="view-models/devoirs-view-model.js"></script>
+    <script src="view-models/ajoutEtudiants-view-model.js"></script>
+    <script src="view-models/profils-view-model.js"></script>
+    <script src="view-models/discussion-view-model.js"></script>
+
+    
+    <!--app.js file -->
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <!--main.js file -->
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
