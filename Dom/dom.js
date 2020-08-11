@@ -74,7 +74,7 @@
 // }
 
 // TRAVERSING THE DOM //
-var itemList = document.querySelector('#items');
+// var itemList = document.querySelector('#items');
     // parentNode
     // console.log(itemList.parentElement);
     // itemList.parentElement.style.backgroundColor = '#cccc';
@@ -110,27 +110,55 @@ var itemList = document.querySelector('#items');
     // console.log(itemList.previousElementSibling)
 
     // CreateElement
-    var newDiv = document.createElement('div');
+    // var newDiv = document.createElement('div');
 
     // Add class
-    newDiv.className = 'hello';
+    // newDiv.className = 'bg-secondary';
 
     // Add id 
-    newDiv.id = 'hello1';
+    // newDiv.id = 'hello1';
 
     // Add attr
-    newDiv.setAttribute('title', 'Hello Div');
+    // newDiv.setAttribute('style', 'color:"red"');
 
     // Create text node
-    var newDivText = document.createTextNode('Hello world');
+    // var newDivText = document.createTextNode('test');
 
     // Add text to div
-    newDiv.appendChild(newDivText)
+    // newDiv.appendChild(newDivText)
 
     // insert the div into the dom 
-    var container = document.querySelector('header .container');
-    var h1 = document.querySelector('header h1');
+    // var list = document.querySelector('header .container');
+    // var h1 = document.querySelector('header h1');
 
-    container.insertBefore(newDiv, h1);
+    // list.insertBefore(newDiv , h1);
     
-    console.log(newDiv);
+    // console.log(newDiv);
+
+// EVENTS //
+
+var button = document.getElementById('button').addEventListener( 'click', buttonClick);
+
+    function buttonClick(e) {
+        // console.log('ok')
+        // document.getElementById('header-title').textContent = "Changed";
+        // document.querySelector('#main').style.backgroundColor = '#cccc';
+
+        // console.log(e.target);
+        // console.log(e.target.id);
+        // console.log(e.target.className);
+
+        // var output = document.getElementById('output');
+        // output.innerHTML = '<h3>'+e.target.id+'</h3>'
+
+        // console.log(e.clientX);
+        // console.log(e.clientY);
+
+        // console.log(e.offsetX);
+        // console.log(e.offsetY);
+
+        // console.log(e.altKey);
+        // console.log(e.ctrlKey);
+        // console.log(e.shiftKey);
+
+    }
