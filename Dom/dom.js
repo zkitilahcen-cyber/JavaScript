@@ -137,9 +137,9 @@
 
 // EVENTS //
 
-var button = document.getElementById('button').addEventListener( 'click', buttonClick);
+// var button = document.getElementById('button').addEventListener( 'click', buttonClick);
 
-    function buttonClick(e) {
+    // function buttonClick(e) {
         // console.log('ok')
         // document.getElementById('header-title').textContent = "Changed";
         // document.querySelector('#main').style.backgroundColor = '#cccc';
@@ -160,5 +160,16 @@ var button = document.getElementById('button').addEventListener( 'click', button
         // console.log(e.altKey);
         // console.log(e.ctrlKey);
         // console.log(e.shiftKey);
+    // }
 
+    var button = document.getElementById('button');
+    
+    // button.addEventListener( 'click', runEvent);
+    // button.addEventListener( 'dblclick', runEvent);
+    button.addEventListener( 'mousedown', runEvent);
+    // button.addEventListener( 'mouseup', runEvent);
+
+    
+    function runEvent(e){
+        console.log('EVEN TYPE: '+e.type);
     }
