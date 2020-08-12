@@ -176,7 +176,7 @@
     // box.addEventListener( 'mouseout', runEvent);
     // box.addEventListener( 'mouseover', runEvent);
 //    var itemInput = document.querySelector("input[type='text']");
-//    var form = document.querySelector('form');
+   var form = document.querySelector('form');
 //    var select = document.querySelector('select'); 
 
 //    itemInput.addEventListener('keydown', runEvent)
@@ -188,10 +188,11 @@
 
     // select.addEventListener('change', runEvent);
 
-
+form.addEventListener('submit', runEvent)
 
 
     function runEvent(e){
+        e.preventDefault();
         console.log('EVEN TYPE: '+e.type);
         
         // output.innerHTML =  '<h3>MouseX: '+e.offsetX+'</h3><h3>MouseY: '+e.offsetY+'</h3>';
