@@ -175,12 +175,20 @@
     // box.addEventListener( 'mousemove', runEvent);
     // box.addEventListener( 'mouseout', runEvent);
     // box.addEventListener( 'mouseover', runEvent);
-   var itemInput = document.querySelector("input[type='text']");
-   var form = document.querySelector('form');
+//    var itemInput = document.querySelector("input[type='text']");
+//    var form = document.querySelector('form');
+//    var select = document.querySelector('select'); 
 
 //    itemInput.addEventListener('keydown', runEvent)
 //    itemInput.addEventListener('keyup', runEvent)
-itemInput.addEventListener('keypress', runEvent)
+//    itemInput.addEventListener('keypress', runEvent)
+
+//    itemInput.addEventListener('focus', runEvent)
+//    itemInput.addEventListener('blur', runEvent)
+
+    // select.addEventListener('change', runEvent);
+
+
 
 
     function runEvent(e){
@@ -189,6 +197,6 @@ itemInput.addEventListener('keypress', runEvent)
         // output.innerHTML =  '<h3>MouseX: '+e.offsetX+'</h3><h3>MouseY: '+e.offsetY+'</h3>';
         // document.body.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",50)";
 
-        console.log(e.target.value)
-        document.getElementById('output').innerHTML = '<h3>'+e.target.value+'</h3>'
+        // console.log(e.target.value)
+        // document.getElementById('output').innerHTML = '<h3>'+e.target.value+'</h3>'
     }
