@@ -162,14 +162,24 @@
         // console.log(e.shiftKey);
     // }
 
-    var button = document.getElementById('button');
-    
+    // var button = document.getElementById('button');
+    // var box = document.getElementById('box');
+    // var output = document.getElementById('output');
     // button.addEventListener( 'click', runEvent);
     // button.addEventListener( 'dblclick', runEvent);
-    button.addEventListener( 'mousedown', runEvent);
+    // button.addEventListener( 'mousedown', runEvent);
     // button.addEventListener( 'mouseup', runEvent);
 
-    
+    // box.addEventListener( 'mouseenter', runEvent);
+    // box.addEventListener( 'mouseleave', runEvent);
+    // box.addEventListener( 'mousemove', runEvent);
+    // box.addEventListener( 'mouseout', runEvent);
+    // box.addEventListener( 'mouseover', runEvent);
+   
+
     function runEvent(e){
         console.log('EVEN TYPE: '+e.type);
+        
+        // output.innerHTML =  '<h3>MouseX: '+e.offsetX+'</h3><h3>MouseY: '+e.offsetY+'</h3>';
+        // document.body.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+",50)";
     }
