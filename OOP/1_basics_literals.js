@@ -10,7 +10,7 @@ const book1 = {
 };
 const book2 = {
     title: 'Book Two',
-    author: 'Leo Jane',
+    author: 'Paolo Jane',
     year: '2018',
     getSummary: function(){
         return `${this.title} was written by ${this.author} in ${this.year}`;
