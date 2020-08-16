@@ -68,12 +68,20 @@ const ages = [33, 12, 20, 16, 5, 21, 54, 21, 44, 61, 13, 45, 15, 25, 64, 32];
 // console.log(eightiesCompanies);
 
 // Get companies that lasted 10 years
- const lastedTenYearsCompanies = companies.filter(company => (company.end - company.start) >= 10);
+//  const lastedTenYearsCompanies = companies.filter(company => (company.end - company.start) >= 10);
 
- console.log(lastedTenYearsCompanies);
+//  console.log(lastedTenYearsCompanies);
 
 
 
 // map
+
+// Create array of company names
+
+const CompanyNames = companies.map(function(company){
+    return company.name;
+});
+
+console.log(CompanyNames)
 // sort
 // reduce
