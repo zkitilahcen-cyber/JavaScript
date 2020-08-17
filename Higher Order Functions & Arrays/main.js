@@ -92,10 +92,28 @@ const ages = [33, 12, 20, 16, 5, 21, 54, 21, 44, 61, 13, 45, 15, 25, 64, 32];
 
 // console.log(testMap);
 
-const agesSquare = ages.map(age => Math.sqrt(age));
+// const agesSquare = ages.map(age => Math.sqrt(age));
 
-console.log(agesSquare);
-
+// console.log(agesSquare);
 
 // sort
+
+// Sort companies by start year
+// const sortedCompanies = companies.sort(function(c1, c2){
+//     if(c1.start > c2.start){
+//         return 1;
+//     } else {
+//         return -1;
+//     }
+// });
+
+// const sortedCompanies = companies.sort((a,b) => (a.start > b.start ? 1 : -1))
+
+// console.log(sortedCompanies);
+
+// Sort ages
+
+const sortAges = ages.sort((a, b) => (a - b));
+console.log(sortAges);
+
 // reduce
