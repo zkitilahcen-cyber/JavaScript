@@ -78,10 +78,24 @@ const ages = [33, 12, 20, 16, 5, 21, 54, 21, 44, 61, 13, 45, 15, 25, 64, 32];
 
 // Create array of company names
 
-const CompanyNames = companies.map(function(company){
-    return company.name;
-});
+// const CompanyNames = companies.map(function(company){
+//     return company.name;
+// });
 
-console.log(CompanyNames)
+// const testMap = companies.map(function(company){
+//     return `${company.name} [${company.start} - ${company.end}]`;
+// });
+
+// const testMap = companies.map(company => 
+//     `${company.name} [${company.start} - ${company.end}]`
+// );
+
+// console.log(testMap);
+
+const agesSquare = ages.map(age => Math.sqrt(age));
+
+console.log(agesSquare);
+
+
 // sort
 // reduce
