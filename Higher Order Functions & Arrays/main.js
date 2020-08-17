@@ -113,7 +113,14 @@ const ages = [33, 12, 20, 16, 5, 21, 54, 21, 44, 61, 13, 45, 15, 25, 64, 32];
 
 // Sort ages
 
-const sortAges = ages.sort((a, b) => (a - b));
-console.log(sortAges);
+// const sortAges = ages.sort((a, b) => (a - b));
+// console.log(sortAges);
+
 
 // reduce
+
+let ageSum = 0;
+for(let i = 0; i < ages.length; i++){
+    ageSum += ages[i];
+}
+console.log(ageSum)
