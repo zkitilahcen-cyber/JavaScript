@@ -1,0 +1,4 @@
+we will dive into AJAX with Vanilla JS and NO JQUERY.
+We will examine the XHR object and how it works.
+We will make xhr requests to a txt file, local json files,
+an external API and even PHP files.
