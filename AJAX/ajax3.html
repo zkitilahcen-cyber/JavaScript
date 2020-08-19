@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJAX 3 - External API</title>
+    <style>
+        .users{
+            display: flex;
+            background: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .users ul{
+            list-style: none;
+        }
+    </style>
 </head>
 <body>
     <button id="button">Load GitHub Users</button>
@@ -29,7 +41,6 @@
                                     '<ul>'+
                                             '<li>ID: '+users[i].id+'</li>'+
                                             '<li>Login : '+users[i].login+'</li>'+
-                                            '<li>Url: '+users[i].url+'</li>'+
                                     '</ul>'+
                               '</div>';
                 }
