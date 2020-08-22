@@ -134,6 +134,37 @@
             .then((res) => res.json())
             .then((data) => console.log(data))
         }
+
+        function addUsers(){
+
+            const url = 'https://reqres.in/api/users';
+
+            // Post body data
+            const user = {
+                first_name: 'lahcen',
+                last_name: 'zkiti',
+                job_title: 'webDev'
+            }
+
+            // Request options
+            const  options = {
+                method: 'POST',
+                body: JSON.stringify(user),
+                headers: { 'Content-type':'application/json'}
+            }
+
+            fetch(url, options).then((res) => res.json())
+            .then((data) => console.log(data))
+            .catch((err) => console.log(err));
+        }
+        
+        // function getUsers(){
+            // Get users
+            // fetch('users.json')
+            //     .then((res) => res.json())
+            //     .then((data) => console.log(data))
+            //     .catch((err) => console.log(err));
+        // }
         
     </script>
 </body>
