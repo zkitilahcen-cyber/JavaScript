@@ -160,7 +160,8 @@
         
         function getUsers(){
             // Get users
-            fetch('users.json')
+            const url = 'https://reqres.in/api/users';
+            fetch(url)
                 .then((res) => res.json())
                 .then((data) => console.log(data))
                 .catch((err) => console.log(err));
