@@ -66,7 +66,7 @@ fs.readFile(filepath, (err, content) => {
             res.writeHead(500);
             res.end(`Server Error: ${err.code}`);
         } 
-    } else {
+    } else { 
         // Success
         res.writeHead(200, {'Content-Type':contenType});
         res.end(content, 'utf-8');
